@@ -53,5 +53,5 @@ a <- system(cmd,intern=TRUE,ignore.stdout = TRUE, ignore.stderr = TRUE)
 
 a <- system('rm -rf intermediate', intern=TRUE, ignore.stdout = TRUE, ignore.stderr = TRUE) 
 
-a <- system('rm -rf semiginal', intern=TRUE, ignore.stdout = TRUE, ignore.stderr = TRUE) 
+a <- system('rm -rf semifinal', intern=TRUE, ignore.stdout = TRUE, ignore.stderr = TRUE) 
 
