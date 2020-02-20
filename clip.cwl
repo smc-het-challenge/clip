@@ -22,17 +22,6 @@ inputs:
     inputBinding:
       position: 3
 
-  output_dir:
-    type: Directory
-    inputBinding:
-      position: 4
-
-  data:
-    type: Directory
-    default: ./
-    inputBinding:
-      position: 5
-
 outputs:
   population:
     type: File
