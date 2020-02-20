@@ -4,7 +4,7 @@ label: CliP
 baseCommand: ["Rscript", "/CliP/Flow.R"]
 requirements:
   - class: DockerRequirement
-    dockerPull: zb2a080/clipdream:dream4
+    dockerPull: smcheteval/clip:0.1
 
 inputs:
   input_vcf:
@@ -21,6 +21,16 @@ inputs:
     type: File
     inputBinding:
       position: 3
+
+  output_dir:
+    type: Directory
+    inputBinding:
+      position: 4
+
+  data:
+    type: Directory
+    inputBinding:
+      position: 5
 
 outputs:
   population:
