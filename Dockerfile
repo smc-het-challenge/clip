@@ -9,5 +9,6 @@ RUN chmod +x /CliP/Flow.R
 RUN addgroup --force-badname --gid 3070 HPCUsers
 RUN adduser --disabled-password --gecos '' --uid 3707 --gid 3070 chiotti
 RUN chown -R chiotti:HPCUsers /CliP
+RUN chown -R chiotti:HPCUsers /mnt
 
 USER chiotti
