@@ -5,6 +5,10 @@ baseCommand: ["Rscript", "/CliP/Flow.R"]
 requirements:
   - class: DockerRequirement
     dockerPull: smcheteval/clip:0.1
+  - class: InitialWorkDirRequirement
+    listing:
+      - entry: $(inputs.data)
+        writable: true
 
 inputs:
   input_vcf:
@@ -51,4 +55,4 @@ outputs:
   cocluster_assignment:
     type: File
     outputBinding:
-      glob: 2B.txt
+      glob: 2B.txt.gz
