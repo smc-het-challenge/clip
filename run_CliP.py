@@ -2,9 +2,9 @@
 This script takes care of the running of CliP
 Usually you will need to run CliP on HPC; 
 the preprocess script makes the input anonymous, so that you can up load them to HPC
-Initialized by Kaixian Yu
+Initialized by Kaixian Yu & Yujie Jiang
 Date: 05/04/2018
-Email: kaixiany@163.com
+Email: kaixiany@163.com, yujiejiang679@gmail.com
 ----------------------------------------------------------------------
 This script takes the following argument: path_to_input path_to_output path_to_clip lam
 -----------------------------------------------------------------------
@@ -61,7 +61,7 @@ least_mut     = np.ceil(0.05 * No_mutation);
 
 wcut=phicut
 
-res = CliP(r, n, minor, total, ploidy, Lambda, alpha, rho, gamma, Run_limit, precision, control_large, least_mut, post_th, least_diff, coef, wcut)
+res = CliP(r, n, minor, total, ploidy, Lambda, alpha, rho, gamma, Run_limit, precision, control_large, least_mut, post_th, least_diff, coef, wcut, purity)
 
 labl = np.unique(res['label'])
 summary = np.zeros([len(labl),3])
