@@ -3,9 +3,9 @@
 # Generating the input file for CliP and de-identify all the samples
 # The input files for each sample should be in one directory
 # Different samples should be in different folder
-# Initialized by Kaixian Yu
+# Initialized by Kaixian Yu & Yujie Jiang
 # Date: 05/04/2018
-# Email: kaixiany@163.com
+# Email: kaixiany@163.com, yujiejiang679@gmail.com
 #------------------------------------------------------------#
 # The script takes commandline arguments: input_SNV input_CNV purity_file Output_dir meta_file
 args = commandArgs(trailingOnly=TRUE)
