@@ -79,7 +79,7 @@ least_diff        = 0.01;
 least_mut         = np.ceil(0.05 * No_mutation);
 wcut=phicut
 res = CliP(r, n, minor, total, ploidy, Lambda*0.01, alpha, rho, gamma, Run_limit, precision,
-         control_large, least_mut, post_th, least_diff, coef, wcut)
+         control_large, least_mut, post_th, least_diff, coef, wcut, purity)
 labl = np.unique(res['label'])
 summary = np.zeros([len(labl),3])
 
