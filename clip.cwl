@@ -5,10 +5,6 @@ baseCommand: ["Rscript", "/CliP/Flow.R"]
 requirements:
   - class: DockerRequirement
     dockerPull: smcheteval/clip:0.1
-  - class: InitialWorkDirRequirement
-    listing:
-      - entry: $(inputs.data)
-        writable: true
 
 inputs:
   input_vcf:
@@ -27,12 +23,14 @@ inputs:
       position: 3
 
   output_dir:
-    type: Directory
+    type: string
+    default: ./
     inputBinding:
       position: 4
 
   data:
-    type: Directory
+    type: string
+    default: ./
     inputBinding:
       position: 5
 
